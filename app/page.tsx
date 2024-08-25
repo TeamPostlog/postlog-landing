@@ -19,7 +19,7 @@ export default function Home() {
                                 className="flex flex-row items-center justify-center gap-5 p-1 text-xs bg-card/60 backdrop-blur-lg rounded-md border border-border">
                                 <Badge className="font-semibold">New</Badge>
                                 <h5>We're onboarding superusers</h5>
-                                <Link href="/" className="flex flex-row items-center">
+                                <Link href="https://tally.so/r/3lLXVW" className="flex flex-row items-center" target="_blank">
                                     Register Now
                                     <ArrowRightIcon className="w-6 h-6 ml-2"/>
                                 </Link>
@@ -38,9 +38,11 @@ export default function Home() {
                             <Button>
                                 Start Now
                             </Button>
-                            <Button variant="secondary">
+                            <a href="https://cal.com/postlog/quick-catchup-call" target="_blank">
+                            <Button variant="secondary" >
                                 Get a Demo
                             </Button>
+                            </a>
                         </div>
 
                         <div
@@ -154,15 +156,18 @@ export default function Home() {
                                         <Button className="w-full" variant={plan.fancy ? "default" : "secondary"}>
                                             Start Now
                                         </Button>
+                                        
                                     </CardContent>
                                         </>
                                         
                                     ): (
                                         <>
                                         <CardContent>
+                                        <a href="https://cal.com/postlog/quick-catchup-call" target="_blank">
                                         <Button className="w-full" variant={plan.fancy ? "default" : "secondary"}>
                                             Book a call
                                         </Button>
+                                        </a>
                                     </CardContent>
                                     </>
                                         

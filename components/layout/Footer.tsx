@@ -19,9 +19,11 @@ const Footer = () => {
                         <Button>
                             Start Now
                         </Button>
+                        <a href="https://cal.com/postlog/quick-catchup-call" target="_blank">
                         <Button variant="secondary">
                             Book a Call
                         </Button>
+                        </a>
                     </div>
                 </div>
                 <div className="mt-10 py-10 border-t items-center justify-between sm:flex">
