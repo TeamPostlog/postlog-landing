@@ -8,7 +8,7 @@ import Footer from "@/components/layout/Footer";
 const font = Mulish({subsets: ["latin"]});
 
 export const metadata: Metadata = {
-    title: "Try Postlog",
+    title: "Postlog",
     description: "Generate API Docs in Seconds",
 };
 
