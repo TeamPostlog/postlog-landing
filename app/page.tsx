@@ -18,32 +18,28 @@ export default function Home() {
                             <div
                                 className="flex flex-row items-center justify-center gap-5 p-1 text-xs bg-card/60 backdrop-blur-lg rounded-md border border-border">
                                 <Badge className="font-semibold">New</Badge>
-                                <h5>Announce your new feature here</h5>
+                                <h5>We're onboarding superusers</h5>
                                 <Link href="/" className="flex flex-row items-center">
-                                    View all features
+                                    Register Now
                                     <ArrowRightIcon className="w-6 h-6 ml-2"/>
                                 </Link>
                             </div>
                         </div>
-                        <h1 className="md:text-7xl my-4 font-extrabold text-4xl md:leading-tight">Create perfect
-                            projects
-                            with
-                            this landing
-                            page!</h1>
+                        <h1 className="md:text-7xl my-4 font-extrabold text-4xl md:leading-tight">
+                            Generate API Docs in Seconds, Not Hours
+                        </h1>
                         <p className="mx-auto my-4 text-sm w-full max-w-xl text-center font-medium leading-relaxed tracking-wide">
-                            This is a landing page template that you can use to create a beautiful website. It is
-                            designed
-                            to be
-                            easy to use and customize. You can use this template to create a landing page for your app,
-                            product,
-                            or service. It is built with Next.js, Tailwind CSS, and TypeScript.
+                        Effortlessly transform your code into clear, concise API docs ith support for popular 
+                        frameworks like Express, Flask, Django, FastAPI and many more. Designed for speed and accuracy, 
+                        Postlog automates your documentation process, saving you time and effort. Built with advanced 
+                        LLM technology to deliver lightning-fast results. Supports 
                         </p>
                         <div className="flex flex-row justify-center items-center space-x-4 my-8">
                             <Button>
-                                Get Started
+                                Start Now
                             </Button>
                             <Button variant="secondary">
-                                Learn More
+                                Get a Demo
                             </Button>
                         </div>
 
@@ -77,12 +73,12 @@ export default function Home() {
                             WHY CHOOSE US
                         </h5>
                         <h2 className="text-4xl font-extrabold my-4">
-                            Build better websites with us
+                        Lightning-Fast API Documentation
                         </h2>
 
                         <p className="mx-auto my-4 text-sm w-full max-w-md bg-transparent text-center font-medium leading-relaxed tracking-wide text-muted-foreground">
-                            Show off your features or services in a beautiful way. This section is perfect for
-                            showcasing
+                        Instantly generate comprehensive API documentation in seconds, regardless of the framework you're using. 
+                        Postlog transforms your code into clear, structured docs at lightning speed, saving you time and effort.
                         </p>
 
                         <div className="flex flex-col md:flex-row gap-4 mt-12">
@@ -130,6 +126,7 @@ export default function Home() {
                         </p>
                         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
                             {pricing.map((plan) => (
+                                
                                 <Card key={plan.title} className="w-full mx-auto max-w-xl text-left relative">
                                     {plan.fancy && (
                                         <Badge className="absolute top-4 right-4">
@@ -145,11 +142,32 @@ export default function Home() {
                                         </CardDescription>
                                         <h5 className="text-2xl font-bold">{plan.price}</h5>
                                     </CardHeader>
-                                    <CardContent>
+                                    {/* <CardContent>
                                         <Button className="w-full" variant={plan.fancy ? "default" : "secondary"}>
-                                            Get Started
+                                            Book a call
+                                        </Button>
+                                    </CardContent> */}
+                                    {
+                                    plan.title === "Basic"?(
+                                        <>
+                                        <CardContent>
+                                        <Button className="w-full" variant={plan.fancy ? "default" : "secondary"}>
+                                            Start Now
                                         </Button>
                                     </CardContent>
+                                        </>
+                                        
+                                    ): (
+                                        <>
+                                        <CardContent>
+                                        <Button className="w-full" variant={plan.fancy ? "default" : "secondary"}>
+                                            Book a call
+                                        </Button>
+                                    </CardContent>
+                                    </>
+                                        
+                                    )
+                                }
                                     <CardFooter>
                                         <ul className="mt-4">
                                             {plan.features.map((feature) => (

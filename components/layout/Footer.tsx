@@ -1,5 +1,6 @@
 import {footerLinks} from "@/data/footerLinks";
 import Link from "next/link";
+import Image from "next/image";
 import {Button} from "@/components/ui/button";
 
 const Footer = () => {
@@ -7,21 +8,24 @@ const Footer = () => {
         <footer className="pt-10">
             <div className="max-w-screen-xl mx-auto px-4 md:px-8">
                 <div className="space-y-6 sm:max-w-md sm:mx-auto sm:text-center">
+                <div className="flex justify-center">
+        <Image src="/logo.png" alt="Logo" width={150} height={30} />
+    </div>
                     <p>
-                        SAAS template is a modern, beautiful, and responsive template designed to showcase your product
-                        or service.
+                    Ready to deploy? Start building with a free account. Speak to an expert for your Pro or Enterprise needs.
                     </p>
                     <div className="items-center gap-x-3 space-y-3 sm:flex sm:justify-center sm:space-y-0">
+                    
                         <Button>
-                            Get started
+                            Start Now
                         </Button>
                         <Button variant="secondary">
-                            Learn more
+                            Book a Call
                         </Button>
                     </div>
                 </div>
                 <div className="mt-10 py-10 border-t items-center justify-between sm:flex">
-                    <p>© 2024 SAAS template. All rights reserved.</p>
+                    <p>© 2024 Postlog. All rights reserved.</p>
                     <ul className="flex flex-wrap items-center gap-4 mt-6 sm:text-sm sm:mt-0">
                         {footerLinks.map((item) => (
                             <li key={item.label}>

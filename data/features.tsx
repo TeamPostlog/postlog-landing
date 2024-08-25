@@ -3,18 +3,18 @@ import {Handshake} from "lucide-react";
 
 export const features = [
     {
-        title: "Fast and Reliable",
-        description: "We provide fast and reliable service to our customers. Our team is always ready to help you with any problem you may have.",
+        title: "Multi-Framework Support",
+        description: "Whether you're using Express, Flask, Django, Ruby on Rails, or GraphQL, Postlog seamlessly integrates with all popular API frameworks. Our platform is designed to handle diverse codebases, ensuring accurate documentation for any API.",
         icon: <RocketIcon className="w-6 h-6"/>,
     },
     {
-        title: "Customizable",
-        description: "Our service is highly customizable. You can choose the color scheme, and other options that best suit your needs.",
+        title: "LLM-Powered Precision",
+        description: "Postlog’s LLM-driven engine understands your code deeply, ensuring that every endpoint and parameter is captured accurately.",
         icon: <Pencil2Icon className="w-6 h-6"/>,
     },
     {
-        title: "User Friendly",
-        description: "Our service is designed to be user friendly. You can easily navigate through the app and find what you need.",
+        title: "Seamless Integration",
+        description: "Integrate Postlog effortlessly into your project’s pipeline. With minimal setup, Postlog automatically generates and updates API documentation as your code evolves, ensuring consistency and accuracy without disrupting your workflow.",
         icon: <Handshake className="w-6 h-6"/>,
     },
 ];

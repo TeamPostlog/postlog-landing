@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from 'next/image';
 import {Button} from "@/components/ui/button";
 import {navLinks} from "@/data/navLinks";
 import {ThemeChanger} from "@/app/Theme-changer";
@@ -9,10 +10,10 @@ const Navbar = () => {
             <div className="container flex flex-row justify-between items-center">
                 <Link href="/">
                     <h1 className="text-2xl">
-                        Logo
+                        <Image src="/logo.png" alt="Logo" width={150} height={30}></Image>
                     </h1>
                 </Link>
-                <ul className="md:flex flex-row justify-between gap-8 hidden">
+                {/* <ul className="md:flex flex-row justify-between gap-8 hidden">
                     {navLinks.map((link) => (
                         <li key={link.title}>
                             <Link href={link.href
@@ -21,12 +22,12 @@ const Navbar = () => {
                             </Link>
                         </li>
                     ))}
-                </ul>
+                </ul> */}
 
                 <div className="flex flex-row justify-end space-x-2">
                     <ThemeChanger/>
                     <Button>
-                        Get Started
+                        Start Now
                     </Button>
                 </div>
             </div>
