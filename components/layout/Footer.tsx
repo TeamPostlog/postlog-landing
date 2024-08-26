@@ -3,22 +3,26 @@ import Link from "next/link";
 import Image from "next/image";
 import {Button} from "@/components/ui/button";
 
+
 const Footer = () => {
     return (
         <footer className="pt-10">
             <div className="max-w-screen-xl mx-auto px-4 md:px-8">
                 <div className="space-y-6 sm:max-w-md sm:mx-auto sm:text-center">
                 <div className="flex justify-center">
-        <Image src="/logo.png" alt="Logo" width={150} height={30} />
+        <Image src="/logo-white.png" alt="Logo" width={150} height={30} />
     </div>
                     <p>
                     Ready to deploy? Start building with a free account. Speak to an expert for your Pro or Enterprise needs.
                     </p>
                     <div className="items-center gap-x-3 space-y-3 sm:flex sm:justify-center sm:space-y-0">
                     
-                        <Button>
+                    <a href="https://app.trypostlog.com/dashboard" target="_blank">
+                    <Button>
                             Start Now
                         </Button>
+                    </a>
+                        
                         <a href="https://cal.com/postlog/quick-catchup-call" target="_blank">
                         <Button variant="secondary">
                             Book a Call

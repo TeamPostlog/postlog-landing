@@ -29,15 +29,17 @@ export default function Home() {
                             Generate API Docs in Seconds, Not Hours
                         </h1>
                         <p className="mx-auto my-4 text-sm w-full max-w-xl text-center font-medium leading-relaxed tracking-wide">
-                        Effortlessly transform your code into clear, concise API docs ith support for popular 
+                        Effortlessly transform your code into clear, concise API docs with support for popular 
                         frameworks like Express, Flask, Django, FastAPI and many more. Designed for speed and accuracy, 
                         Postlog automates your documentation process, saving you time and effort. Built with advanced 
-                        LLM technology to deliver lightning-fast results. Supports 
+                        LLM technology to deliver lightning-fast results. 
                         </p>
                         <div className="flex flex-row justify-center items-center space-x-4 my-8">
+                        <a href="https://app.trypostlog.com/dashboard" target="_blank">
                             <Button>
                                 Start Now
                             </Button>
+                        </a>
                             <a href="https://cal.com/postlog/quick-catchup-call" target="_blank">
                             <Button variant="secondary" >
                                 Get a Demo
@@ -153,9 +155,13 @@ export default function Home() {
                                     plan.title === "Basic"?(
                                         <>
                                         <CardContent>
-                                        <Button className="w-full" variant={plan.fancy ? "default" : "secondary"}>
-                                            Start Now
-                                        </Button>
+
+                                        <a href="https://app.trypostlog.com/dashboard" target="_blank">
+                                            <Button className="w-full" variant={plan.fancy ? "default" : "secondary"}>
+                                                Start Now
+                                            </Button>
+                                        </a>
+                                        
                                         
                                     </CardContent>
                                         </>
