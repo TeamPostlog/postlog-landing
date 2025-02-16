@@ -180,6 +180,9 @@ export default function Home() {
                                     )
                                 }
                                     <CardFooter>
+                                        <p>Quinch Systems Private Limited</br>
+                                        20/ 2, James Long Sarani, Diamond Park, Joka, Kolkata, West Bengal 700104</br>
+                                        </p>
                                         <ul className="mt-4">
                                             {plan.features.map((feature) => (
                                                 <li key={feature} className="flex items-center gap-2">
